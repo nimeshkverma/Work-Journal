@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body { 
+                min-width: 420px; 
+                overflow-x: hidden; 
+                font-family: Arial, sans-serif; 
+                font-size: 12px;
+            }
+            input, textarea { 
+                width: 420px; 
+            }
+            input#save { 
+                font-weight: bold; width: auto; 
+            }
+            .image_container {
+              text-align: center;
+              font-family: Arial, sans-serif; 
+              font-size: 12px;
+            }
+        </style>
+        <script src="popup.js"></script>
+    </head>
+    <body>
+        <div class="image_container">
+          <h2>Work Journal</h2>
+          <img src="/icons/logo.png" alt="Icon" style="width:50px;height:50px;text-align: center;">
+        </div>
+        <form id="entry">
+            <p><label for="problem">Problem:</label><br />
+            <textarea id="problem" name="problem" rows="4" cols="20"></textarea></p>
+            <p><label for="hypothesis">Hypothesis:</label><br />
+            <textarea id="hypothesis" name="hypothesis" rows="4" cols="20"></textarea></p>
+            <p><label for="experiments">Experiments:</label><br />
+            <textarea id="experiments" name="experiments" rows="4" cols="20"></textarea></p>
+            <p><label for="results">Results:</label><br />
+            <textarea id="results" name="results" rows="4" cols="20"></textarea></p>
+            <p><label for="conclusion">Conclusion:</label><br />
+            <textarea id="conclusion" name="conclusion" rows="4" cols="20"></textarea></p>
+            <p>
+                <input id="save" type="submit" value="Save Task" />
+                <span id="status-display"></span>
+            </p>
+        </form>
+    </body>
+</html>
